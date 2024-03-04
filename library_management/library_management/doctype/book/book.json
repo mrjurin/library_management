@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-03-04 14:23:24.027228",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "book_information_tab",
+  "book_information_section",
+  "isbn",
+  "category",
+  "column_break_jnbn",
+  "book_name",
+  "author_information_tab",
+  "author_information_section",
+  "author_name"
+ ],
+ "fields": [
+  {
+   "description": "Please enter book name",
+   "fieldname": "book_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Book Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "book_information_section",
+   "fieldtype": "Section Break",
+   "label": "Book Information"
+  },
+  {
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "label": "ISBN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jnbn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "book_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Book Information"
+  },
+  {
+   "fieldname": "author_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Author Information"
+  },
+  {
+   "fieldname": "author_information_section",
+   "fieldtype": "Section Break",
+   "label": "Author Information"
+  },
+  {
+   "description": "<i style=\"color:red;\"><strong>Author name</strong> as in the book</i>",
+   "fieldname": "author_name",
+   "fieldtype": "Link",
+   "label": "Author Name",
+   "options": "Book Author"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Book Category"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-04 16:05:32.182186",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Book",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "isbn,book_name",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "book_name"
+}

@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-04 16:03:30.149702",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "author_id",
+  "column_break_ypdo",
+  "author_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "author_id",
+   "fieldtype": "Data",
+   "label": "Author ID"
+  },
+  {
+   "fieldname": "author_name",
+   "fieldtype": "Data",
+   "label": "Author Name"
+  },
+  {
+   "fieldname": "column_break_ypdo",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Books",
+   "link_doctype": "Book",
+   "link_fieldname": "author_name"
+  }
+ ],
+ "modified": "2024-03-04 16:08:21.199849",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Book Author",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "author_name"
+}

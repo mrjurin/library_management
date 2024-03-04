@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:patron_id",
+ "creation": "2024-03-04 15:33:59.297125",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "patron_information_section",
+  "patron_id",
+  "profile_photo",
+  "column_break_ynam",
+  "full_name",
+  "patron_book_histories_section",
+  "book_histories"
+ ],
+ "fields": [
+  {
+   "fieldname": "patron_information_section",
+   "fieldtype": "Section Break",
+   "label": "Patron Information"
+  },
+  {
+   "fieldname": "patron_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Patron ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_ynam",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "patron_book_histories_section",
+   "fieldtype": "Section Break",
+   "label": "Patron Book Histories"
+  },
+  {
+   "fieldname": "book_histories",
+   "fieldtype": "Table",
+   "label": "Book Histories",
+   "options": "Patron Book History"
+  },
+  {
+   "fieldname": "profile_photo",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Profile Photo"
+  }
+ ],
+ "image_field": "profile_photo",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-04 16:17:06.906015",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Patron",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}

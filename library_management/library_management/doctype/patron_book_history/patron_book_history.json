@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-04 15:39:30.746659",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "book_information_section",
+  "book",
+  "column_break_urrr",
+  "isbn",
+  "borrow_information_section",
+  "borrowed_date",
+  "column_break_lwzs",
+  "person_in_charge_a",
+  "returned_information_section",
+  "returned_date",
+  "column_break_ypge",
+  "person_in_charge_b"
+ ],
+ "fields": [
+  {
+   "fieldname": "book",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Book",
+   "options": "Book"
+  },
+  {
+   "fieldname": "column_break_urrr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "borrow_information_section",
+   "fieldtype": "Section Break",
+   "label": "Borrow Information"
+  },
+  {
+   "fieldname": "borrowed_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Borrowed Date"
+  },
+  {
+   "fieldname": "column_break_lwzs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "person_in_charge_a",
+   "fieldtype": "Data",
+   "label": "Person In Charge A"
+  },
+  {
+   "fieldname": "returned_information_section",
+   "fieldtype": "Section Break",
+   "label": "Returned Information"
+  },
+  {
+   "fieldname": "returned_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Returned Date"
+  },
+  {
+   "fieldname": "column_break_ypge",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "person_in_charge_b",
+   "fieldtype": "Data",
+   "label": "Person In Charge B"
+  },
+  {
+   "fieldname": "book_information_section",
+   "fieldtype": "Section Break",
+   "label": "Book Information"
+  },
+  {
+   "fetch_from": "book.isbn",
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "label": "ISBN",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-03-04 15:59:15.945420",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Patron Book History",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
