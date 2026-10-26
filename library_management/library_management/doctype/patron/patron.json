@@ -11,6 +11,7 @@
   "profile_photo",
   "column_break_ynam",
   "full_name",
+  "signature_eigp",
   "patron_book_histories_section",
   "book_histories"
  ],
@@ -54,12 +55,16 @@
    "fieldtype": "Attach Image",
    "hidden": 1,
    "label": "Profile Photo"
+  },
+  {
+   "fieldname": "signature_eigp",
+   "fieldtype": "Signature"
   }
  ],
  "image_field": "profile_photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-04 16:17:06.906015",
+ "modified": "2024-03-04 16:32:38.533284",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Patron",

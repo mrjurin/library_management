@@ -6,4 +6,5 @@ from frappe.model.document import Document
 
 
 class Book(Document):
-    pass
+    def get_book_from_api(self):
+        return True
